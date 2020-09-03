@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/selectmonth" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_calendar_prevmonth" android:background="@drawable/before" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0px" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="12.0">
+            <TextView android:textSize="30.0dip" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/CalendarMonthTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="90.0" />
+        </FrameLayout>
+        <Button android:id="@id/btn_calendar_nextmonth" android:background="@drawable/next" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="20.0px" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/sunday" android:layout_weight="1.0" />
+            <TextView android:id="@id/textView1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/monday" android:layout_weight="1.0" />
+            <TextView android:id="@id/textView2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/tuesday" android:layout_weight="1.0" />
+            <TextView android:id="@id/textView3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/wendsday" android:layout_weight="1.0" />
+            <TextView android:id="@id/textView4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/thursday" android:layout_weight="1.0" />
+            <TextView android:id="@id/textView5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/friday" android:layout_weight="1.0" />
+            <TextView android:id="@id/textView6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/saturday" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ScrollView android:id="@id/calendar_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TableLayout android:id="@id/tl_calendar_monthly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        </ScrollView>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/txt1" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="준비물 또는 과제를 입력할 날짜를 선택해주세요." android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

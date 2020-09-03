@@ -1,0 +1,599 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+         <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="#ec2427"
+            android:src="@drawable/top" />
+         
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#ec2427"
+        android:gravity="left" >
+         
+    <Button
+        android:id="@+id/food_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/food_map" />
+
+         <Button
+        android:id="@+id/food_major"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/food_major" />
+          
+         <Button
+        android:id="@+id/food_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/food_tab" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+      
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:stretchColumns="2,4,6,8" >
+            
+            <View 
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="#000000"/>
+
+          <TableRow
+              android:id="@+id/tableRow1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" >
+      
+              <TextView
+                  android:id="@+id/blank"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="#fcd1bf"
+                  android:gravity="center"
+                  android:text="" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/studentfood"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#fcd1bf"
+                  android:layout_span="5"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:gravity="center"
+                  android:text="학생식당" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/textView3"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#fcd1bf"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="미림관" />
+              
+          </TableRow>
+          
+          <View 
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="#000000"/>
+      
+          <TableRow
+              android:id="@+id/tableRow2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+      
+              <TextView
+                  android:id="@+id/blank2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="#fcd1bf"
+                  android:text="" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/rice"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="백반" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/special"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="스페셜" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/porkcutlet"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:gravity="center"
+                  android:text="돈까스" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/blank3"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="" />
+      
+          </TableRow>
+          
+          <View 
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="#000000"/>
+      
+          <TableRow
+              android:id="@+id/tableRow3"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1" >
+      
+              <TextView
+                  android:id="@+id/mon"
+                  android:layout_width="30dp"
+                  android:layout_height="match_parent"
+                  android:background="#fcd1bf"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="월" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hb_mon"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hs_mon"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:gravity="center"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hd_mon"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:gravity="center"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/m_mon"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+      
+          </TableRow>
+          
+          <View 
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="#000000"/>
+      
+          <TableRow
+              android:id="@+id/tableRow4"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1" >
+      
+              <TextView
+                  android:id="@+id/tues"
+                  android:layout_width="30dp"
+                  android:layout_height="match_parent"
+                  android:background="#fcd1bf"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="화" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hb_tue"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:gravity="center"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hs_tue"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:gravity="center"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hd_tue"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:gravity="center"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+
+              <TextView
+                  android:id="@+id/m_tue"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:text="TextView"
+                  android:textAppearance="?android:attr/textAppearanceLarge" />
+      
+          </TableRow>
+          
+          <View 
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="#000000"/>
+      
+          <TableRow
+              android:id="@+id/tableRow5"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1" >
+      
+              <TextView
+                  android:id="@+id/wed"
+                  android:layout_width="30dp"
+                  android:layout_height="match_parent"
+                  android:background="#fcd1bf"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="수" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hb_wed"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hs_wed"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hd_wed"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/m_wed"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+      
+          </TableRow>
+          
+          <View 
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="#000000"/>
+      
+          <TableRow
+              android:id="@+id/tableRow6"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1" >
+      
+              <TextView
+                  android:id="@+id/thue"
+                  android:layout_width="30dp"
+                  android:layout_height="match_parent"
+                  android:background="#fcd1bf"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="목" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hb_thu"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hs_thu"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hd_thu"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/m_thu"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+      
+          </TableRow>
+          
+          <View 
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="#000000"/>
+      
+          <TableRow
+              android:id="@+id/tableRow7"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1" >
+      
+              <TextView
+                  android:id="@+id/fri"
+                  android:layout_width="30dp"
+                  android:layout_height="match_parent"
+                  android:background="#fcd1bf"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="금" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hb_fri"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hs_fri"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/hd_fri"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+              
+              <ImageView 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#000000"/>
+      
+              <TextView
+                  android:id="@+id/m_fri"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="TextView" />
+      
+          </TableRow>
+          
+          <View 
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="#000000"/>
+          
+        </TableLayout>
+      
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="bottom" >
+    
+        <Button
+        android:id="@+id/food_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/food_back"/>
+
+    <Button
+        android:id="@+id/food_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/food_home"/>
+
+    <Button
+        android:id="@+id/food_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/food_card"/>
+
+    <Button
+        android:id="@+id/food_logout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/food_logout" />
+        
+    </LinearLayout>
+
+    
+    
+</LinearLayout>

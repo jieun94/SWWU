@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#ec2427"
+            android:src="@drawable/top" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="#ec2427"
+        android:gravity="left">
+
+        <Button
+        android:id="@+id/school_i_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/school_i_tab" />
+
+   		<Button
+        android:id="@+id/school_i_h"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/school_i_h" />
+   		 
+   		<Button
+        android:id="@+id/school_i_s"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/school_i_s" />
+          
+
+        </LinearLayout>
+
+ 	<ScrollView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+ 	<LinearLayout
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="match_parent"
+ 		    android:orientation="vertical" >
+
+ 			<LinearLayout
+ 			    android:layout_width="match_parent"
+ 			    android:layout_height="wrap_content"
+ 			    android:orientation="vertical"
+ 			    android:layout_weight="1" >
+
+ 				<ImageView
+ 				    android:id="@+id/schoolbus_inje"
+ 				    android:layout_width="match_parent"
+ 				    android:layout_height="match_parent"
+ 				    android:scaleType="fitXY"
+ 				    android:src="@drawable/schoolbus_inje" />
+
+ 			</LinearLayout>
+ 			
+
+ 		</LinearLayout>
+ 	
+    </ScrollView>
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="bottom" >
+        
+        <Button
+        android:id="@+id/school_i_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/school_i_back"/>
+
+    <Button
+        android:id="@+id/school_i_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/school_i_home"/>
+
+    <Button
+        android:id="@+id/school_i_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/school_i_card"/>
+
+    <Button
+        android:id="@+id/school_i_logout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/school_i_logout" />
+    </LinearLayout>
+
+   
+
+</LinearLayout>

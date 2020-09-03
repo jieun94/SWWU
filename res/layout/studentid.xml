@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+         <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="#ec2427"
+            android:src="@drawable/top" />
+         
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+         
+    <Button
+        android:id="@+id/studentid_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/studentid_tab" />
+
+   		<Button
+        android:id="@+id/studentid_non"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/job_non" />
+   		 
+   		<Button
+        android:id="@+id/studentid_non1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/job_non" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:background="@drawable/studentid_bgimage"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/studentimg"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="80dp"/>
+
+        <TableLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_weight="1"
+            android:stretchColumns="3" >
+            
+
+            <TableRow
+                android:id="@+id/studentid_major"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                
+                <TextView
+                    android:id="@+id/studentid_major1"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:background="@drawable/studentid_major"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="학과"/>
+                
+                <TextView
+                    android:id="@+id/studentid_major2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="center"/>
+
+            </TableRow>
+            
+
+           <TableRow
+                android:id="@+id/studentid_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                
+
+                <TextView
+                    android:id="@+id/studentid_number1"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:background="@drawable/studentid_number"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="학번" />
+
+                <TextView
+                    android:id="@+id/studentid_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="center"/>
+
+            </TableRow>
+            
+
+            <TableRow
+                android:id="@+id/studentid_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                
+
+                <TextView
+                    android:id="@+id/studentid_name1"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:background="@drawable/studentid_name"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="이름" />
+                
+                <TextView
+                    android:id="@+id/studentid_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </TableRow>
+            
+        </TableLayout>
+
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="bottom" >
+    
+    <Button
+        android:id="@+id/studentid_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/studentid_back"/>
+
+    <Button
+        android:id="@+id/studentid_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/studentid_home"/>
+
+    <Button
+        android:id="@+id/studentid_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/studentid_card"/>
+
+    <Button
+        android:id="@+id/studentid_logout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/studentid_logout" />
+        
+    </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,124 @@
+package com.example.swwu;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+    		Button m_jobcafe = (Button) findViewById(R.id.m_jobcafe);
+    		m_jobcafe.setOnClickListener(new OnClickListener() {
+            	
+            	public void onClick(View v) {
+            		Intent intent = new Intent(getApplicationContext(),JobcafeActivity.class);
+            		startActivity(intent);
+            	}
+            });  
+            
+           
+            Button m_student = (Button) findViewById(R.id.m_student);
+            m_student.setOnClickListener(new OnClickListener() {
+            	
+            	public void onClick(View v) {
+            		Intent intent = new Intent(getApplicationContext(),Login.class);
+            		startActivity(intent);
+            	}
+            }); 
+            
+            Button m_calendar = (Button) findViewById(R.id.m_calendar);
+            m_calendar.setOnClickListener(new OnClickListener() {
+            	
+            	public void onClick(View v) {
+            		Intent intent = new Intent(getApplicationContext(),CalendarActivity.class);
+            		startActivity(intent);
+            	}
+            }); 
+            
+            Button m_notice = (Button) findViewById(R.id.m_notice);
+            m_notice.setOnClickListener(new OnClickListener() {
+            	
+            	public void onClick(View v) {
+            		Intent intent = new Intent(getApplicationContext(),NoticeActivity.class);
+            		startActivity(intent);
+            	}
+            }); 
+            
+            Button m_schoolbus = (Button) findViewById(R.id.m_schoolbus);
+            m_schoolbus.setOnClickListener(new OnClickListener() {
+            	
+            	public void onClick(View v) {
+            		Intent intent = new Intent(getApplicationContext(),SchoolbusIActivity.class);
+            		startActivity(intent);
+            	}
+            }); 
+            
+            Button m_qna = (Button) findViewById(R.id.m_qna);
+            m_qna.setOnClickListener(new OnClickListener() {
+            	
+            	public void onClick(View v) {
+            		Intent intent = new Intent(getApplicationContext(),QnAActivity.class);
+            		startActivity(intent);
+            	}
+            }); 
+            
+            Button m_campus = (Button) findViewById(R.id.m_campus);
+            m_campus.setOnClickListener(new OnClickListener() {
+            	
+            	public void onClick(View v) {
+            		Intent intent = new Intent(getApplicationContext(),MapActivity.class);
+            		startActivity(intent);
+            	}
+            }); 
+            
+            Button m_loststuff = (Button) findViewById(R.id.m_loststuff);
+            m_loststuff.setOnClickListener(new OnClickListener() {
+            	
+            	public void onClick(View v) {
+            		Intent intent = new Intent(getApplicationContext(),LoststuffActivity.class);
+            		startActivity(intent);
+            	}
+            }); 
+            
+            Button m_work = (Button) findViewById(R.id.m_work);
+            m_work.setOnClickListener(new OnClickListener() {
+            	
+            	public void onClick(View v) {
+            		Intent intent = new Intent(getApplicationContext(),WorkActivity.class);
+            		startActivity(intent);
+            	}
+            });  
+    }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(event.getKeyCode() == KeyEvent.KEYCODE_BACK){
+             AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setMessage("종료하시겠습니까? ")
+                        .setCancelable(false)
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                           public void onClick(DialogInterface dialog, int id) {
+                                   System.exit(0);
+                           }
+                       })
+                       .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                           public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                           }
+                       });
+                AlertDialog alert = builder.create();
+                alert.show();
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+}
